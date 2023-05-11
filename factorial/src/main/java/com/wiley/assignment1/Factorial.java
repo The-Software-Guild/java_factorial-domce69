@@ -34,8 +34,9 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
-		 int num = 0;
-		 num = scanner.nextInt();
+		 //int num = 0;
+		 String temp = "";
+		 int num = Integer.parseInt(temp);
 		 if(num >= 1 && num <= 10) {
 			 return num;
 		 } else {
