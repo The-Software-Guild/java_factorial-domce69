@@ -36,6 +36,7 @@ public class Factorial {
 		//YOUR CODE STARTS HERE
 		 //int num = 0;
 		 String temp = "";
+		 temp = scanner.next();
 		 int num = Integer.parseInt(temp);
 		 if(num >= 1 && num <= 10) {
 			 return num;
