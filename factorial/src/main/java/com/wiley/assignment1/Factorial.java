@@ -35,13 +35,22 @@ public class Factorial {
 
 		 
 		//YOUR CODE STARTS HERE
-		 //int num = 0;
+		 String number;
 		 int num;
-		 num = scanner.nextInt();		 
+		 number = scanner.next();
+		 
+		 try {
+			 num = Integer.parseInt(number);
+		 } catch (NumberFormatException e) {
+			 
+			 this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
+		 }
+		 
+		 num = Integer.parseInt(number);
 		 if(num >= 1 && num <= 10) {
 			 return num;
 		 } else {
-			 this.printStream.print("Please Enter valid Input as number between 1 and 10 only, both inclusive");
+			 this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
 			 return -1;
 		 }
 		//YOUR CODE ENDS HERE
